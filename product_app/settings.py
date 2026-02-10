@@ -73,12 +73,20 @@ WSGI_APPLICATION = 'product_app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
+# Opsi A: PostgreSQL (Disarankan untuk produksi)
+# Opsi B: SQLite (Untuk development / jika belum install PostgreSQL)
 
+import os
+
+# if os.environ.get('USE_SQLITE', '').lower() in ('1', 'true', 'yes'):
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
+# else:
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'productdb',
