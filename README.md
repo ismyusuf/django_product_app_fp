@@ -1,5 +1,7 @@
-# Link Demo Proyek
+# Link Demo Proyek & Website Proyek
 youtube https://youtu.be/0a2UFkYqwBQ
+
+web https://muhyusuf2.pythonanywhere.com/
 # Django Product Management App
 
 Sistem manajemen produk berbasis Django untuk **Tes Junior Programmer FastPrint**.
